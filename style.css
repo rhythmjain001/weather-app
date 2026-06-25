@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#14003b,#0b0b5f,#ff007f);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    color:white;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:550px;
+    padding:40px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 0 40px rgba(255,0,255,0.3);
+    text-align:center;
+}
+
+h1{
+    font-size:50px;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.search-box{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    flex:1;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    outline:none;
+    font-size:18px;
+}
+
+.search-box button{
+    padding:16px 30px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    color:white;
+    background:linear-gradient(135deg,#ff4d94,#8a2be2);
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    transform:scale(1.05);
+}
+
+.city{
+    font-size:40px;
+    font-weight:700;
+    margin-top:20px;
+}
+
+.temp{
+    font-size:90px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.description{
+    font-size:22px;
+    margin-bottom:20px;
+    text-transform:capitalize;
+}
+
+#weatherResult img{
+    width:150px;
+    filter:drop-shadow(0 0 20px rgba(255,255,0,0.5));
+}
+
+.info{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.card{
+    flex:1;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.dark{
+    background:linear-gradient(135deg,#000000,#121212);
+}
+
+.dark .container{
+    background:rgba(0,0,0,0.5);
+}
+
+.dark button{
+    background:linear-gradient(135deg,#ff7b00,#ff006e);
+}
+
+button:last-child{
+    margin-top:25px;
+    padding:14px 28px;
+    border:none;
+    border-radius:15px;
+    color:white;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    background:linear-gradient(135deg,#ff4d94,#8a2be2);
+}
